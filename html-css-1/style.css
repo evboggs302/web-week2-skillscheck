@@ -1,0 +1,44 @@
+header {
+  height: 60px;
+  width: 100vw;
+  background-color: grey;
+  display: flex;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: grey;
+  width: 50vw;
+  color: white;
+  font-style: bold;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: grey;
+  width: 50vw;
+  color: black;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.top-menu > ul {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+}
+
+ul > li {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  color: white;
+}
