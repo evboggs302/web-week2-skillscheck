@@ -138,24 +138,37 @@ const myNumbers = [3, 55, 788, 2, 1];
 // First, let's use .map to create a new array that doubles each number. Call the new array 'doubled'
 
 // Code Here
+let doubled = myNumbers.map(function(val) {
+  return val * 2;
+});
 
 //////////////////PROBLEM 15////////////////////
 
 // Now lets use .filter to only get the nubmer(s) greater than 100. Call the new array 'filtered'
 
 // Code Here
+let filtered = myNumbers.filter(function(value, index, arr) {
+  return value > 100;
+});
 
 //////////////////PROBLEM 16////////////////////
 
 // Next up, reduce to get the total of the array. call the new array 'total'
 
 // Code Here
+let total = myNumbers.reduce(function(total, val, index, arr) {
+  return total + val;
+});
 
 //////////////////PROBLEM 17////////////////////
 
 // Last, lets use .forEach to find the index of each item in the array. First, create an empty array called myNumbersIndex. Next, using forEach, push each items index from the myNumbers array to the myNumbersIndex array
 
 // Code Here
+let myNumbersIndex = [];
+myNumbers.forEach(function(val, index) {
+  return myNumbersIndex.push(index);
+});
 
 //////////////////PROBLEM 18////////////////////
 
