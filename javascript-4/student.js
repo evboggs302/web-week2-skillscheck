@@ -27,16 +27,15 @@ let me = {
   firstname: "Evan",
   superHeroName: "Exodus",
   homeTown: "Middletown",
-  superPowers: [
-    "Teleportation",
-    "commune with dead people",
-    "manipulate metal"
-  ],
+  superPowers: ["Teleportation", "Speed", "Manipulate Metal"],
   superPowerXP: function() {
-    Math.floor(Math.random() * 100) + 1;
+    return Math.floor(Math.random() * 100) + 1;
   },
-  profileImage:
-    "https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1}.jpg"
+  profileImage: function() {
+    return `https://randomuser.me/api/portraits/med/lego/${Math.floor(
+      Math.random() * 10
+    ) + 1}.jpg`;
+  }
 };
 
 //////////////////Step 3////////////////////
@@ -62,7 +61,7 @@ function setColor(arr) {
     arr.splice(3);
   }
   for (let i = arr.length - 1; i > 0; i--) {
-    if (arr[i] === blue) {
+    if ((arr[i] = "blue")) {
       arr.splice(i, 1, "#4D4DFF");
     }
   }
