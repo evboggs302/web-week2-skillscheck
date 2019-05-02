@@ -42,3 +42,98 @@ ul > li {
   align-content: space-between;
   color: white;
 }
+
+body {
+  width: 100vw;
+  height: 90vh;
+}
+
+.know {
+  background-color: black;
+  height: 300px;
+  width: 100vw;
+  color: yellow;
+  font-style: bold 10px;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teal-boxes {
+  display: flex;
+  padding: 20px;
+  height: 300px;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.teal-boxes > :nth-child(1) {
+  display: flex;
+  background-color: aquamarine;
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+}
+.teal-boxes > :nth-child(2) {
+  display: flex;
+  background-color: aquamarine;
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.teal-boxes > :nth-child(3) {
+  display: flex;
+  background-color: aquamarine;
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.orange-rects {
+  display: flex;
+  padding: 200px;
+  height: 300px;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.orange-rects > :nth-child(1) {
+  display: flex;
+  background-color: orange;
+  height: 250px;
+  width: 600px;
+}
+
+.orange-rects > :nth-child(2) {
+  display: flex;
+  background-color: orange;
+  height: 250px;
+  width: 600px;
+}
+
+.extras {
+  display: flex;
+  padding: 20px;
+  height: 300px;
+  width: 100vw;
+  padding: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.para {
+  height: 250px;
+  width: 600px;
+  text-align: left;
+  font-size: 25px;
+}
+
+footer {
+  height: 100px;
+  width: 100vw;
+  background-color: purple;
+}
