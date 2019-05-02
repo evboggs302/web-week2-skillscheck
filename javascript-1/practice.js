@@ -176,6 +176,10 @@ myNumbers.forEach(function(val, index) {
 const notGeorge = ["Louis", "Ted", "Bill", "Sharon", "Mark", "Angela"];
 
 // Code Here
+let forTheLoveOfGeorge = [];
+notGeorge.map(function(val) {
+  return forTheLoveOfGeorge.push("George");
+});
 
 //////////////////PROBLEM 19////////////////////
 
@@ -190,9 +194,15 @@ const people = [
 ];
 
 // Code Here
+let enemies = people.filter(function(element, index, arr) {
+  return element.friend === false;
+});
 
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, let's get a total of the awesomeLevel from all the people. Call the new array 'totallyAwesome'. Use .reduce()
 
 // Code Here
+let totallyAwesome = people.reduce(function(total, val) {
+  return total + val.awesomeLevel;
+}, 0);
